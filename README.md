@@ -77,16 +77,18 @@ Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
 BUILD SUCCESS
 ```
 
-### 3. Ejecutar Mutation Testing con PIT
+### 3. Ejecutar tests
+
+```bash
+mvn test
+```
+
+![Tests en verde — 25/25 pasando](capturas/tests-en-verde.png)
+
+### 4. Ejecutar Mutation Testing con PIT
 
 ```bash
 mvn org.pitest:pitest-maven:mutationCoverage
-```
-
-El reporte HTML se genera en:
-
-```
-target/pit-reports/index.html
 ```
 
 ---
@@ -105,7 +107,7 @@ Suite inicial: **3 tests** con aserciones triviales (`isNotNull()`, estado sin v
 | Sin cobertura      | 10                    |
 | Test strength      | 4%                    |
 
-> **Captura:** ver `capturas/pit-baseline-consola.png`
+![Reporte PIT — Baseline (3% mutation score)](capturas/pit-baseline-consola.png)
 
 **Mutantes supervivientes principales (baseline):**
 
@@ -129,7 +131,7 @@ Suite mejorada: **25 tests** con aserciones de estado precisas y pruebas de lím
 | Sin cobertura      | 0                       |
 | Test strength      | 82%                     |
 
-> **Captura:** ver `capturas/pit-mejorado-consola.png`
+![Reporte PIT — Suite mejorada (82% mutation score)](capturas/pit-mejorado-consola.png)
 
 ### Evolución del score
 
