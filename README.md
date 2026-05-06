@@ -60,7 +60,7 @@ algoritmos-castellanos-post2-u10/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<usuario>/algoritmos-castellanos-post2-u10.git
+git clone https://github.com/KeiverJ/algoritmos-castellanos-post2-u10.git
 cd algoritmos-castellanos-post2-u10
 ```
 
