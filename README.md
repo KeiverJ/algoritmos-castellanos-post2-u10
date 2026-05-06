@@ -101,7 +101,7 @@ Suite inicial: **3 tests** con aserciones triviales (`isNotNull()`, estado sin v
 
 | Métrica            | Valor                 |
 | ------------------ | --------------------- |
-| Line Coverage      | 77% (36/47)           |
+| Line Coverage      | 78% (36/46)           |
 | Mutation Score     | **3%** (1/34 matados) |
 | Mutantes generados | 34                    |
 | Sin cobertura      | 10                    |
@@ -125,7 +125,7 @@ Suite mejorada: **25 tests** con aserciones de estado precisas y pruebas de lím
 
 | Métrica            | Valor                   |
 | ------------------ | ----------------------- |
-| Line Coverage      | **100%** (46/46)        |
+| Line Coverage      | **100%** (47/47)        |
 | Mutation Score     | **82%** (28/34 matados) |
 | Mutantes generados | 34                      |
 | Sin cobertura      | 0                       |
@@ -200,10 +200,10 @@ idéntico. **Mutante equivalente** cuando el bucket inicia lleno.
 
 | Concepto       | Baseline | Mejorado |
 | -------------- | -------- | -------- |
-| Line Coverage  | 77%      | **100%** |
+| Line Coverage  | 78%      | **100%** |
 | Mutation Score | 3%       | **82%**  |
 
-**Reflexión:** La cobertura de línea en el baseline era del 77%, es decir, las líneas sí
+**Reflexión:** La cobertura de línea en el baseline era del 78%, es decir, las líneas sí
 se ejecutaban. Sin embargo, el mutation score era del 3%, lo que demuestra que ejecutar
 código **no es lo mismo que verificarlo**. Las aserciones triviales (`isNotNull()`,
 `.getState() != null`) permiten que los mutantes sobrevivan porque no detectan el cambio
